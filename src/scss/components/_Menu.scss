@@ -1,0 +1,25 @@
+.Menu {
+  margin-top: 5px;
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
+
+  &-Item {
+    opacity: .6;
+
+    & + & {
+      margin-left: 28px;
+    }
+
+    &_active {
+      opacity: 1;
+    }
+  }
+
+  &-Link {
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-color-base;
+  }
+}

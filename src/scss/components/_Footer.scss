@@ -1,0 +1,46 @@
+.Footer {
+  grid-row-start: 3;
+  padding: 22px 28px;
+  margin-top: 20px;
+  border-top: 1px solid #F0F0F0;
+
+  &-Inner {
+    @include Clearfix;
+
+    @include m-max(768px) {
+      text-align: center;
+    }
+  }
+
+  &-Links {
+    float: left;
+
+    @include m-max(768px) {
+      display: block;
+      float: none;
+    }
+  }
+
+  &-Item {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  &-Link {
+    float: left;
+    font-size: 12px;
+    color: #858585;
+  }
+
+  &-Copyright {
+    float: right;
+    font-size: 12px;
+    color: #858585;
+
+    @include m-max(768px) {
+      display: block;
+      float: none;
+      margin-top: 10px;
+    }
+  }
+}
