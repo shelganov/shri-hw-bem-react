@@ -1,9 +1,7 @@
 
-@import "mixins/Clearfix";
-@import "mixins/Lists";
-@import "mixins/Media";
-
-@import "UtilityClasses";
+@import "../mixins/Clearfix";
+@import "../mixins/Lists";
+@import "../mixins/Media";
 
 @import "core/Variables";
 @import "core/Base";

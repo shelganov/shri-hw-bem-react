@@ -1,0 +1,61 @@
+.Card_type_critical {
+  padding: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #DB5341;
+  &:hover {
+    .Card-Content {
+      background-color: #F3F3F3;
+    }
+  }
+
+  .Card-Header {
+    padding: 0 20px 0;
+    margin-top: 20px;
+    color: #FFF;
+
+    @include m(xs) {
+      margin-top: 14px;
+    }
+  }
+
+  .Card-Source {
+    padding-left: 20px;
+  }
+
+  .Card-Time {
+    padding-right: 20px;
+  }
+
+  .Card-Source,
+  .Card-Time {
+    color: #FFF;
+  }
+
+  .Card-Wrap {
+    margin-bottom: 17px;
+  }
+  .Card-Content {
+    padding: 20px 20px 24px;
+    background-color: #FAFAFA;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    @include m(xs) {
+      padding: 20px 16px 16px;
+    }
+
+    .Card-Text {
+      margin-top: 0;
+    }
+
+    .Card-Img {
+      margin-top: 29px;
+
+      @include m(xs) {
+        margin-top: 19px;
+      }
+    }
+  }
+}

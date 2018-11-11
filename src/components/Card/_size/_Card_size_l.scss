@@ -1,0 +1,34 @@
+.Card_size_l {
+  grid-column: span 6;
+  grid-row: span 6;
+
+  @include m-min(768px) {
+    grid-column: span 4;
+  }
+
+  .Card-Text {
+    padding-right: 40px;
+    margin-top: 21px;
+
+    @include m(lg) {
+      font-size: 24px;
+      margin-top: 18px;
+    }
+
+    @include m(xs) {
+      padding-right: 0;
+    }
+  }
+
+  .Card-Header {
+    margin-bottom: 17px;
+  }
+
+  .Card-Img {
+    margin-top: 51px;
+
+    @include m(xs) {
+      margin-top: 19px;
+    }
+  }
+}

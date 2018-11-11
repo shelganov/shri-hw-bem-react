@@ -1,3 +1,7 @@
+@import "../../mixins/Clearfix";
+@import "../../mixins/Lists";
+@import "../../mixins/Media";
+
 .Footer {
   grid-row-start: 3;
   padding: 22px 28px;

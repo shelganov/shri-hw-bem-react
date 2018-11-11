@@ -1,0 +1,11 @@
+.Card_type_info {
+    padding: 20px;
+    background: #FAFAFA;
+    &:hover {
+      background-color: #F3F3F3;
+    }
+
+    @include m(xs) {
+      padding: 16px;
+    }
+  }

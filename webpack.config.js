@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
     entry: {
-        touch: './src/touch.ts',
+        touch: './src/index.tsx',
     },
     output: {
         path: path.resolve(__dirname, `dist`),
@@ -24,7 +24,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts$/,
+                test: /\.(ts|tsx)$/,
                 exclude: /(node_modules|bower_components)/,
                 use: [
                     {
@@ -78,7 +78,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'img/[name].[ext]?[hash]'
+                            name: '[path]/[name].[ext]?[hash]'
                         }
                     },
                     {
@@ -106,9 +106,9 @@ module.exports = {
                         }
                     }
                 ],
-                include: [
-                    path.resolve(__dirname, `src/img`)
-                ],
+                // include: [
+                //     path.resolve(__dirname, `src/img`)
+                // ],
             }
         ]
     },

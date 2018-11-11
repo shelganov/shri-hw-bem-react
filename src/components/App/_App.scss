@@ -1,3 +1,8 @@
+@import "../../mixins/Clearfix";
+
+$font-family-base: "Arial";
+$font-size-base: 18px;
+
 html,
 body {
   padding: 0;
@@ -9,7 +14,7 @@ body {
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
-  color: $text-color-base;
+  color: #333;
   line-height: 1.2;
 }
 
@@ -40,5 +45,39 @@ img {
     left: 0;
     overflow: hidden;
     transform: translate3d(-80%, 0, 0);
+  }
+}
+
+.Container {
+  @include Clearfix;
+  width: 1064px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1064px) {
+    width: auto;
+  }
+}
+
+h1,h2,h3,h4,h4,h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 620px) {
+    font-size: 24px;
+  }
+}
+
+.PageTouch {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .Card {
+    margin: 0 auto;
   }
 }

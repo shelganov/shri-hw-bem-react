@@ -5,9 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "prod": "webpack --mode production",
-    "dev": "webpack --watch --mode development",
+    "dev": "webpack --watch --hot --mode development ",
     "node": "ts-node app/server.ts",
-    "start": "webpack --mode production && webpack-dev-server --host localhost --port 3000"
+    "start": "webpack --mode development --hot && webpack-dev-server --host localhost --port 3000"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/shelganov/shri-hw-1#readme",
   "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
     "@types/express": "^4.16.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -46,10 +47,15 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
+    "@bem-react/classname": "^1.1.1",
+    "@bem-react/core": "^1.2.0",
     "@types/hls.js": "^0.10.2",
     "@types/node": "^10.12.1",
+    "@types/react-dom": "^16.0.9",
     "express": "^4.16.4",
     "hls.js": "^0.11.0",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
   }
 }
