@@ -1,11 +1,11 @@
 import {compose, IClassNameProps} from '@bem-react/core';
 import {Hamburger as Base} from "./Hamburger";
-import {HamburgerShow} from './_show/Hamburger_show';
+import {HamburgerModeActive} from './_mode/Hamburger_mode_active';
 
 export interface IHamburgerProps extends IClassNameProps {
-    show?: 'yes';
+    mode?: 'active';
 }
 
 export const Hamburger = compose(
-    HamburgerShow
+    HamburgerModeActive
 )(Base);

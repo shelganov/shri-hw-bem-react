@@ -6,14 +6,14 @@ import './_Hamburger.scss';
 const cnHamburger = cn('Hamburger');
 
 export class Hamburger extends Component<IHamburgerProps> {
-    constructor(props: any) {
-        super(props);
-    };
+    // constructor(props: any) {
+    //     super(props);
+    // };
 
     render() {
-        const {show} = this.props;
+        const {mode} = this.props;
         return (
-            <div id="js-SideMenu-trigger" className={cnHamburger()}>
+            <div  className={cnHamburger({mode})}>
                 <div className={cnHamburger('Icon')}></div>
             </div>
         )
