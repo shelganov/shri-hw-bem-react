@@ -47,7 +47,9 @@
   "dependencies": {
     "@bem-react/classname": "^1.1.1",
     "@bem-react/core": "^1.2.0",
+    "@bem-react/di": "^1.0.3",
     "@types/react-dom": "^16.0.9",
+    "mobile-detect": "^1.4.3",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   }

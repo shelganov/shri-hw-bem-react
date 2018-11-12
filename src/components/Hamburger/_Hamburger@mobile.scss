@@ -1,0 +1,13 @@
+.Hamburger {
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-Icon {
+    width: 16px;
+    height: 14px;
+    background: url("./hamburger.svg") no-repeat center;
+  }
+}

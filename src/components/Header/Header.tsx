@@ -26,7 +26,7 @@ export default class Header extends React.Component {
                     <Logo className={cnHeader('Logo')}/>
                     <div className={cnContainer()}>
                         <Menu/>
-                        <Hamburger mode="active"/>
+                        <Hamburger className={cnHeader('Hamburger')} mode="active"/>
                     </div>
                 </div>
             </header>

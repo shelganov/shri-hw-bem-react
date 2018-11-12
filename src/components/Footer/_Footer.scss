@@ -11,9 +11,9 @@
   &-Inner {
     @include Clearfix;
 
-    @include m-max(768px) {
-      text-align: center;
-    }
+    //@include m-max(768px) {
+    //  text-align: center;
+    //}
   }
 
   &-Links {
@@ -21,10 +21,10 @@
     @include ListInline;
     float: left;
 
-    @include m-max(768px) {
-      display: block;
-      float: none;
-    }
+    //@include m-max(768px) {
+    //  display: block;
+    //  float: none;
+    //}
   }
 
   &-Item {
@@ -43,10 +43,10 @@
     font-size: 12px;
     color: #858585;
 
-    @include m-max(768px) {
-      display: block;
-      float: none;
-      margin-top: 10px;
-    }
+    //@include m-max(768px) {
+    //  display: block;
+    //  float: none;
+    //  margin-top: 10px;
+    //}
   }
 }

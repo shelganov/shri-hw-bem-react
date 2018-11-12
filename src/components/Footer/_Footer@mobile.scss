@@ -1,0 +1,19 @@
+//@import "../../mixins/Clearfix";
+//@import "../../mixins/Lists";
+//@import "../../mixins/Media";
+
+.Footer {
+
+  &-Inner {
+    text-align: center;
+  }
+
+  &-Links {
+    display: block;
+  }
+
+  &-Copyright {
+    display: block;
+    margin-top: 10px;
+  }
+}
