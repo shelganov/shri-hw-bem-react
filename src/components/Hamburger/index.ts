@@ -1,9 +1,9 @@
-import { compose, IClassNameProps } from '@bem-react/core';
+import {compose, IClassNameProps} from '@bem-react/core';
 import {Hamburger as Base} from "./Hamburger";
 import {HamburgerShow} from './_show/Hamburger_show';
 
-export interface IHambrugerProps extends IClassNameProps {
-    show?: true;
+export interface IHamburgerProps extends IClassNameProps {
+    show?: 'yes';
 }
 
 export const Hamburger = compose(

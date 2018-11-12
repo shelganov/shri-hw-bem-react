@@ -1,9 +1,13 @@
 import React from 'react';
 import {ModBody, withBemMod} from '@bem-react/core';
-import {IHambrugerProps} from '../index';
+import {IHamburgerProps} from '../index';
 
-export const HamburgerShow: ModBody<IHambrugerProps> = (Base, {show}) => (
-    <div id="js-SideMenu-trigger" className={className()}>
-        <div className={cnHamburger('Icon')}></div>
-    </div>
+
+
+const HamburgerLink: ModBody<IHamburgerProps> = (Base, {show, className}) => (
+    // className += `Hamburger_show_${show}`;
+    <a id="js-SideMenu-trigger" href="#" className={className}>
+        <div className={className}></div>
+    </a>
 );
+export const HamburgerShow = withBemMod<IHamburgerProps>('Hamburger', {show: 'yes'}, HamburgerLink);
