@@ -1,24 +1,23 @@
 {
-  "name": "shri-hw-1",
+  "name": "shri-hw-bem-react",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "prod": "webpack --mode production",
-    "dev": "webpack --watch --hot --mode development ",
-    "node": "ts-node app/server.ts",
+    "dev": "webpack --watch --hot --mode development",
     "start": "webpack --mode development --hot && webpack-dev-server --host localhost --port 3000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shelganov/shri-hw-1.git"
+    "url": "git+https://github.com/shelganov/shri-hw-bem-react.git"
   },
   "author": "shelganov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shelganov/shri-hw-1/issues"
+    "url": "https://github.com/shelganov/shri-hw-bem-react/issues"
   },
-  "homepage": "https://github.com/shelganov/shri-hw-1#readme",
+  "homepage": "https://github.com/shelganov/shri-hw-bem-react#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
     "@types/express": "^4.16.0",
@@ -39,7 +38,6 @@
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^5.2.2",
-    "ts-node": "^7.0.1",
     "typescript": "^3.1.3",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.17.2",
@@ -49,12 +47,7 @@
   "dependencies": {
     "@bem-react/classname": "^1.1.1",
     "@bem-react/core": "^1.2.0",
-    "@types/hls.js": "^0.10.2",
-    "@types/node": "^10.12.1",
     "@types/react-dom": "^16.0.9",
-    "express": "^4.16.4",
-    "hls.js": "^0.11.0",
-    "http": "0.0.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   }
