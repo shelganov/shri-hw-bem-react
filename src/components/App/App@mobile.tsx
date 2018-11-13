@@ -1,30 +1,12 @@
 import React from 'react';
 import {cn} from '@bem-react/classname';
-// import { Registry, withRegistry } from '@bem-react/di';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
-import Card from '../Card/Card';
-import './_App.scss';
+import { Registry, withRegistry } from '@bem-react/di';
+import {App as AppFull} from './App';
+import {Header} from '../Header/Header@mobile';
 
-const cnContent = cn('Content');
-const cnContainer = cn('Container');
+const cnApp = cn("App");
+const cnHeader = cn("Header");
+const registry = new Registry({id: cnApp()});
+registry.set(cnHeader(), Header);
 
-export default class App extends React.Component {
-    constructor(props: any) {
-        super(props);
-    };
-
-    render() {
-        return (
-            <div className={cnContent()}>
-                <Header/>
-                <main>
-                    <div className={cnContainer(null,['PageTouch'])}>
-                        <Card/>
-                    </div>
-                </main>
-                <Footer/>
-            </div>
-        )
-    }
-}
+export const AppMobile = withRegistry(registry)(AppFull);

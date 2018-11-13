@@ -3,9 +3,7 @@ import {cn} from '@bem-react/classname';
 import { compose, IClassNameProps } from '@bem-react/core';
 import './_Menu.scss';
 
-
 const cnMenu = cn('Menu');
-const links = ['События', 'Сводка', 'Устройства', 'Сценарии', 'Видео', 'Наблюдение']
 
 export default class Menu extends React.Component {
     constructor(props: any) {
