@@ -1,24 +1,25 @@
-//@import "../../mixins/Lists";
-//
-//.Menu {
-//  @include ListInline;
-//  @include ListUnstyled;
-//
-//  @media screen and (max-width: 820px) {
-//    display: none;
-//  }
-//
-//  &-Item {
-//    opacity: .6;
-//
-//    & + & {
-//      margin-left: 28px;
-//    }
-//  }
-//
-//  &-Link {
-//    font-size: 16px;
-//    font-weight: 700;
-//    color: #333;
-//  }
-//}
+@import "../../mixins/Lists";
+@import "_active/Menu-Item_active";
+
+.Menu {
+  @include ListInline;
+  @include ListUnstyled;
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
+
+  &-Item {
+    opacity: .6;
+
+    & + & {
+      margin-left: 28px;
+    }
+  }
+
+  &-Link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+  }
+}

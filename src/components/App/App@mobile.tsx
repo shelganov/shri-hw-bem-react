@@ -1,6 +1,6 @@
 import React from 'react';
 import {cn} from '@bem-react/classname';
-import { Registry, withRegistry } from '@bem-react/di';
+// import { Registry, withRegistry } from '@bem-react/di';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer'
 import Card from '../Card/Card';

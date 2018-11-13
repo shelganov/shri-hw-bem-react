@@ -8,11 +8,6 @@ import './_Header.scss';
 const cnHeader = cn('Header');
 const cnContainer = cn('Container');
 
-// interface IProps {
-//     name: string,
-//     state: any
-// }
-
 export default class Header extends React.Component {
     constructor(props: any) {
         super(props);
