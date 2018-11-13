@@ -1,5 +1,10 @@
 # BEM-REACT
 
+## Установка
+```$xslt
+npm i
+```
+
 ## Запуск
 ```
 npm run start
